@@ -13,7 +13,7 @@ filepath = Path(f'/Users/HP/Downloads/{file_name}.csv')
 
 # connect to http://www.boochnews.com/stats/awstats/
 html_text = requests.get('http://www.boochnews.com/stats/awstats/2022-10/awstats.www.boochnews.com.urldetail.html',
-                         auth=('theneil', 'Neil!guy')).text
+                         auth=('[username]', '[password]')).text
 
 # initialize beautiful soup and define table
 soup = BeautifulSoup(html_text, 'lxml')
